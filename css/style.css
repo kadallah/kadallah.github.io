@@ -1,0 +1,31 @@
+.container {
+	position:relative;
+}
+
+#sidebar {
+	position:absolute;
+	left:0px;
+	width: 30%;
+	padding: 0px 5% 5% 5%;
+	height: 100%;
+	/*background:rgba(51,51,51,.75);*/
+	overflow: scroll;
+	z-index: 1;
+}
+
+h1{
+	font-family: 'Raleway', sans-serif;
+	font-size: 5em;
+	color:rgba(51,51,51,.75);
+}
+h2{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+	color:rgba(51,51,51,.75);
+	text-align:right;
+}
+p{
+	font-family: 'Roboto Mono', monospace;
+	font-size: 1em;
+	color:#333333;
+}
