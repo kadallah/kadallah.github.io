@@ -30,6 +30,13 @@ p{
 	color:#333333;
 }
 
+/*Landscape Screens*/
+@media all and (orientation:landscape) {
+  #sidebar {
+  	top: 110%;
+  }
+}
+
 /*Desktop*/
 @media only screen and (min-width: 768px){
 	#sidebar {
