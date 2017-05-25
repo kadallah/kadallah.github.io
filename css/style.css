@@ -70,6 +70,32 @@ h2:hover{
 	-webkit-transition: color .5s ease-out;
 	transition: color .5s ease-out;
 }
+h3{
+	font-family:'Roboto Mono', monospace;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+a{
+	text-decoration: none;
+
+	color:rgba(248,112,96,1);
+	-webkit-transition: color .25s ease-in;
+	transition: color .25s ease-in;
+
+	background-color: rgba(255,255,255,.75);
+	-webkit-transition: background-color .25s ease-in;
+	transition: background-color .25s ease-in;
+
+	padding:0px 10px 0px 10px;
+}
+a:hover{
+	background-color: rgba(255,255,255,1);
+	-webkit-transition: background-color .25s ease-in;
+	transition: background-color .25s ease-in;
+}
+
+
 p{
 	font-family: 'Roboto Mono', monospace;
 	font-size: 0.75em;
