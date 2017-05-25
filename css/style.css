@@ -38,6 +38,15 @@ body{
 	background: linear-gradient(to bottom right, rgba(255,95,109,0.75), rgba(255,195,113,0.75)); /* Standard syntax */
 }
 
+
+#noTrans{
+	background: rgba(255,95,109,1); /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left top, rgba(255,95,109,1), rgba(255,195,113,1)); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, rgba(255,95,109,1), rgba(255,195,113,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, rgba(255,95,109,1), rgba(255,195,113,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, rgba(255,95,109,1), rgba(255,195,113,1)); /* Standard syntax */
+}
+
 h1{
 	font-family: 'Raleway', sans-serif;
 	font-size: 3.5em;
@@ -127,14 +136,6 @@ p{
 		width: 60%;
 		height: 100%;
 		left: 40%;
-	}
-
-	#noTrans{
-		background: rgba(255,95,109,1); /* For browsers that do not support gradients */
-		background: -webkit-linear-gradient(left top, rgba(255,95,109,1), rgba(255,195,113,1)); /* For Safari 5.1 to 6.0 */
-		background: -o-linear-gradient(bottom right, rgba(255,95,109,1), rgba(255,195,113,1)); /* For Opera 11.1 to 12.0 */
-		background: -moz-linear-gradient(bottom right, rgba(255,95,109,1), rgba(255,195,113,1)); /* For Firefox 3.6 to 15 */
-		background: linear-gradient(to bottom right, rgba(255,95,109,1), rgba(255,195,113,1)); /* Standard syntax */
 	}
 }
 
