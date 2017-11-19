@@ -1,1 +1,0 @@
-# kadallah.github.io
