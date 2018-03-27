@@ -1,24 +1,535 @@
-<html>
-  <head>
-    <script       src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-      	<style type="text/css">
-	        html, body {
-	            height: 100%;
-	            margin: 0;
-	        }
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <title>Kadallah. Creative Technologist, Digital Artist</title>
+        <!--Meta-->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	        #wrapper {
-	            min-height: 100%; 
-	        }
-    	</style>
-    	<title>KADALLAH</title>
-  </head>
-  <body>
-  <div id="wrapper">
-	  <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;margin:0;">
-	  		<iframe src="https://app.ludus.one/90331f36-e997-448d-9763-7811100b8c65" frameborder="0" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" height="100%" width="100%"></iframe>
-	  </div>
-  </div>
-  </body>
+        <!--Page Card for SEO-->
+        <meta property="og:title" content="Kadallah. Creative Technologist, Digital Artist" />
+        <meta property="og:description" content="Creative Technologist and Digital Artist based out of Shanghai, China." />
+        <meta property="og:url" content="http://kadallah.github.com" />
+        <meta property="og:site_name" content="Kadallah." />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-114x114.png">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Poppins:300,500,600" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' media='screen' />
+
+        <!-- Font Icon CSS -->
+        <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='screen' />
+
+        <!-- Owl Carousel Plugin CSS -->
+        <link rel='stylesheet' href='css/owl.carousel.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin CSS -->
+        <link rel='stylesheet' href='css/photoswipe.css' type='text/css' media='screen' />
+
+        <!-- Lightbox Plugin Skin CSS -->
+        <link rel='stylesheet' href='css/skin/photoswipe/default/default-skin.css' type='text/css' media='screen' />
+
+         <!-- Gridstack(Custom Portfolio Grid) -->
+        <link rel='stylesheet' href='css/gridstack.min.css' type='text/css' media='screen' />
+
+        <!-- Arnold Theme Main CSS -->
+        <link rel='stylesheet' href='css/style.css' type='text/css' media='screen' />
+
+        <!-- Custom Portfolio Grid CSS -->
+        <style type="text/css">
+            .grid-stack .grid-item-con:hover:after { opacity: 1; }
+            .grid-item-con:after { background-color: #313139}
+            .grid-item-tit, .grid-item-tit-a:hover, .grid-item-tit-a { color: #fff; }
+            .grid-item-tit, .bm-tab-slider-trigger-tilte,.cusl-tit { font-family: Poppins; font-weight: normal; font-style: normal; font-size: 32px; }
+        </style>
+	
+        <!-- IE hack -->
+        <!--[if lte IE 9]>
+    	<link rel='stylesheet' id='cssie9'  href='css/ie.css' type='text/css' media='screen' />
+    	<![endif]-->
+
+	</head>
+  
+    <body class="home page pswp-light-skin responsive-ux navi-hide navi-hide-pop2 dark-logo preload ux-start-hide">
+
+        <!--Audio Player-->
+        <div id="jquery_jplayer" class="jp-jplayer"></div>
+
+        <!--Main wrap-->
+        <div id="wrap-outer">
+
+            <!--Header-->
+            <header id="header">
+
+                <div id="header-main" class="header-main">
+                
+                    <div class="container">
+
+                        <!--Hamberg icon-->
+                        <span id="navi-trigger">
+                            <span class="navi-trigger-text">
+                                <span class="navi-trigger-text-menu navi-trigger-text-inn">MENU</span>
+                                <span class="navi-trigger-text-close navi-trigger-text-inn">CLOSE</span>
+                            </span>
+                            <span class="navi-trigger-inn"></span>
+                        </span>
+                                    
+                         <div class="navi-logo">
+
+                            <div class="logo-wrap">
+                                <div id="logo">
+                                    <a class="logo-a" href="index.html" title="Kadallah">
+                                        <h1 class="logo-h1 logo-not-show-txt">Kadallah</h1>
+                                        <img class="logo-image logo-dark" src="img/logo-dark.png" alt="Kadallah Xiaoka Logo" />
+                                        <span class="logo-light"><img class="logo-image" src="img/logo-light.png" alt="Kadallah Xiaoka White Logo" /></span>
+                                    </a>
+                                </div>
+                            </div><!--End logo wrap-->
+                             
+                        </div>
+                    
+                    </div>
+                    
+                </div><!--End header main-->
+                
+            </header>
+
+            <!--Expanded Menu Panel-->
+            <div id="menu-panel">
+
+                <div class="menu-panel-inn fullscreen-wrap">
+                 
+                    <nav id="navi">
+
+                        <div id="navi-wrap">
+
+                            <ul class="menu clearfix">
+                                <li class="menu-item current-menu-item"><a>Home</a></li>
+                                <li class="menu-item"><a href="page-about.html">About</a></li>
+                                <li class="menu-item"><a href="page-contact.html">Contact</a></li>
+                            </ul>
+
+                        </div><!--End #navi_wrap-->
+                    </nav>
+
+                    <div id="menu-panel-bottom" class="container-fluid"> 
+
+                        <div class="menu-panel-bottom-left col-md-3 col-sm-3 col-xs-3">
+
+                            <div class="search-top-btn-class">
+                                <span class="fa fa-search"></span>
+                                <form class="search_top_form"  method="get" action="#">
+                                    <input type="search" id="s" name="s" class="search_top_form_text" placeholder="Type and Hit Enter">
+                                </form>
+                            </div> 
+
+                        </div>
+
+                        <div class="menu-panel-bottom-right col-md-9 col-sm-9 col-xs-9">
+
+                            <div class="socialmeida-mobile">
+                                    
+                                <ul class="socialmeida clearfix">                       
+                                    <li class="socialmeida-li">
+                                        <a title="Facebook" href="https://www.facebook.com/uiueux" class="socialmeida-a">
+                                            <span class=""></span> <span class="socialmeida-text">Fb.</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="socialmeida-li">
+                                        <a title="Twitter" href="https://twitter.com/uiueux" class="socialmeida-a">
+                                            <span class=""></span> <span class="socialmeida-text">Tw.</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="socialmeida-li">
+                                        <a title="Behance" href="https://www.behance.net/bwsm" class="socialmeida-a">
+                                            <span class=""></span> <span class="socialmeida-text">Be.</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                    
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div><!--End #menu-panel-->
+
+			
+            <!-- Main Content Wrap -->
+    		<div id="wrap">
+
+                <!-- Main Content : List, text content ... -->
+    	        <div id="content">
+
+                    <div class="content_wrap_outer fullwrap-layout">
+            
+                        <div id="content_wrap">
+                            
+
+                            <!--Big Text + Social icons-->
+                            <div class="page-template-intro-outer ux-show-social container">
+                                
+                                <section class="ux-portfolio-template-intro">
+
+                                    <h1><span style="color: #E26D5A;">Kadallah.</span></h1>
+
+                                    <p>Digital artist and creative technologist based out of Shanghai, China. I'm passionate about creating art using code and emerging media techniques as well as solving the world's biggest problems through design.</p>
+
+                                </section>
+
+                                <div class="pagetemplate-social">
+
+                                    <ul class="socialmeida clearfix">                       
+                                                        
+                                        <li class="socialmeida-li">
+                                            <a title="" href="https://medium.com/@kadallah_" class="socialmeida-a" style="opacity: 1; display: inline-block; transform: scaleX(1) scaleY(1); transform-origin: 50% 50% 0px;">
+                                                <span class="fa fa-medium"></span> 
+                                            </a>
+                                        </li>
+                                                    
+                                        <li class="socialmeida-li">
+                                            <a title="" href="https://www.facebook.com/KadallahBurrowes/" class="socialmeida-a" style="opacity: 1; display: inline-block; transform: scaleX(1) scaleY(1); transform-origin: 50% 50% 0px;">
+                                                <span class="fa fa-facebook"></span> 
+                                            </a>
+                                        </li>
+                                                    
+                                        <li class="socialmeida-li">
+                                            <a title="" href="https://open.spotify.com/user/thehilariouskb" class="socialmeida-a" style="opacity: 1; display: inline-block; transform: scaleX(1) scaleY(1); transform-origin: 50% 50% 0px;">
+                                                <span class="fa fa-spotify"></span> 
+                                            </a>
+                                        </li>
+                                                    
+                                        <li class="socialmeida-li">
+                                            <a title="" href="https://www.instagram.com/kadallah_/" class="socialmeida-a" style="opacity: 1; display: inline-block; transform: scaleX(1) scaleY(1); transform-origin: 50% 50% 0px;">
+                                                <span class="fa fa-instagram"></span> 
+                                            </a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                            <!-- End page-template-intro-outer-->
+
+                            <!--Irregular list-->
+                            <div class="cusl-style-list">
+                                <section class="cusl-style-unit cusl-img-left cusl-text-bottom-right cusl-img-w70" data-postid="198">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 50%;">
+                                            <img src="img/supernova/1.jpg" alt="Supernova" class="cusl-img ux-lazyload-img lazy"/>
+                                        </div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="supernova.html" title="Supernova">Supernova</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="supernova.html" title="Supernova">Supernova</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="cusl-style-unit cusl-img-center cusl-text-bottom-left  cusl-img-w50 " data-postid="50">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 150%;"><img src="img/blank.gif" data-src="img/ipt/2.png" alt="Inaugural Planetary Tour" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="IPT.html" title="Inaugural Planetary Tour">Inaugural</br>Planetary</br>Tour</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="IPT.html" title="Inaugural Planetary Tour">Inaugural Planetary Tour</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <!--Item-->
+                                <section class="cusl-style-unit cusl-img-right cusl-text-top-left cusl-img-w70" data-postid="198">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 60%;">
+                                            <img src="img/televised/2.jpg" alt="Televised" class="cusl-img ux-lazyload-img lazy" />
+                                        </div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="televised.html" title="Televised">Televised</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="televised.html" title="Televised">Televised</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section class="cusl-style-unit cusl-img-left cusl-text-bottom-right cusl-img-w70" data-postid="198">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 60%;">
+                                            <img src="img/VTV/5.jpg" alt="VTV" class="cusl-img ux-lazyload-img lazy"/>
+                                        </div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="VTV.html" title="VTV">VTV</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in New Media Art" class="cusl-cate-a">New Media Art</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="VTV.html" title="VTV">VTV</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section class="cusl-style-unit cusl-img-center cusl-text-top-right  cusl-img-w50 " data-postid="50">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 120%;"><img src="img/blank.gif" data-src="img/adaptool/1.jpg" alt="Adaptool" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Conceptual Design" class="cusl-cate-a">Conceptual Design</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="adaptool.html" title="Adaptool">Adaptool</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Conceptual Design" class="cusl-cate-a">Conceptual Design</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="adaptool.html" title="Adaptool">Adaptool</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section class="cusl-style-unit cusl-img-right cusl-text-top-left cusl-negative-padding cusl-img-w70 " data-postid="61">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 90%;"><img src="img/blank.gif" data-src="img/active/1.jpg" alt="Active" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Conceptual Design" class="cusl-cate-a">Conceptual Design</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="active.html" title="Active">Active</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Conceptual Design" class="cusl-cate-a">Conceptual Design</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="active.html" title="Active">Active</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section class="cusl-style-unit cusl-img-center cusl-text-top-right cusl-negative-padding cusl-img-w70 " data-postid="613">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 85%;"><img src="img/blank.gif" data-src="img/suckers1/2.jpg" alt="SUCKERS Generative Design" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Generative Design" class="cusl-cate-a">Generative Design</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://www.behance.net/gallery/58280125/SUCKERS-Generative-Design" title="SUCKERS Marketing">SUCKERS<p>Marketing</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Generative Design" class="cusl-cate-a">Generative Design</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://www.behance.net/gallery/58280125/SUCKERS-Generative-Design" title="SUCKERS Marketing">SUCKERS<p>Marketing</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section class="cusl-style-unit cusl-img-right cusl-text-top-left cusl-negative-padding cusl-img-w70 " data-postid="61">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 50%;"><img src="img/blank.gif" data-src="img/suckers1/1.png" alt="SUCKERS User Experience" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in UX Design" class="cusl-cate-a">SUCKERS User Experience</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="active.html" title="SUCKERS User Experience">SUCKERS<p>User Experience</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in UX Design" class="cusl-cate-a">UX Design</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="active.html" title="SUCKERS User Experience">SUCKERS<p>User Experience</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="cusl-style-unit cusl-img-left cusl-text-middle-right  cusl-img-w60 " data-postid="48">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 90%;"><img src="img/blank.gif" data-src="img/Journalism/1.png" alt="At the Intersection of Racism and Data" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Journalism" class="cusl-cate-a">Journalism</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://medium.com/@kadallah_/at-the-intersection-of-racism-and-data-4c64b663434" title="At the Intersection of Racism and Data">At the Intersection<p>of Racism and Data</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Journalism" class="cusl-cate-a">Journalism</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://medium.com/@kadallah_/at-the-intersection-of-racism-and-data-4c64b663434" title="At the Intersection of Racism and Data">At the Intersection<p>of Racism and Data</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                <section class="cusl-style-unit cusl-img-right cusl-text-middle-left cusl-negative-padding cusl-img-w70 " data-postid="61">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 50%;"><img src="img/blank.gif" data-src="img/Journalism/4.jpg" alt="Radii China" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Journalism" class="cusl-cate-a">Journalism</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://radiichina.com/author/kadallah-burrowes/" title="Radii China">Radii China</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Journalism" class="cusl-cate-a">Journalism</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://radiichina.com/author/kadallah-burrowes/" title="Radii China">Radii China</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                
+                                <section class="cusl-style-unit cusl-img-left cusl-text-top-right  cusl-img-w60 " data-postid="48">
+                                    <div class="cusl-style-unit-inn">
+                                        <div class="cusl-img-wrap" style="padding-top: 90%;"><img src="img/blank.gif" data-src="img/Journalism/5.jpg" alt="CHINA 2K15" class="cusl-img ux-lazyload-img lazy" /></div>
+                                        <div class="cusl-style-normal-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Photography" class="cusl-cate-a">Photography</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://www.flickr.com/photos/99414766@N08/albums/72157655499012663" title="CHINA 2K15">CHINA 2K15</a></h2>
+                                            </div>
+                                        </div>
+                                        <div class="cusl-style-light-text-wrap">
+                                            <div class="cusl-style-tit-wrap">
+                                                <span class="cusl-cate"><a href="#" title="View all posts in Photography" class="cusl-cate-a">Photography</a></span>
+                                                <h2 class="cusl-tit"><a class="cusl-tit-a" href="https://www.flickr.com/photos/99414766@N08/albums/72157655499012663" title="CHINA 2K15">CHINA 2K15</a></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                            </div>
+
+
+                        </div><!-- End #content_wrap-->
+
+                    </div><!-- End content_wrap_outer-->
+
+                </div><!--End #content-->
+
+                <!-- Footer -->
+                <footer id="footer" class="foot-one-col">
+
+                    <div class="footer-info">
+                        <div class="container">
+                            <div id="logo-footer">
+                                <a href="index.html" title="Kadallah">
+                                    <div id="logo-footer">
+                                        <img class="logo-footer-img" src="img/logo-dark.png" alt="Kadallah Xiaoka Logo" />
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Back Top -->
+                    <div class="container-fluid back-top-wrap centered-ux"><div id="back-top"></div></div>
+
+                </footer>
+
+            </div><!--End #wrap -->  
+	       
+           <div class="video-overlay modal"><span class="video-close"></span></div><!--end video-overlay-->
+	  
+        </div><!--End wrap-outer-->
+
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <div class="pswp__bg"></div>
+
+            <div class="pswp__scroll-wrap">
+
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- jQuery Library -->
+        <script type='text/javascript' src='js/jquery.min.js'></script>
+        <!-- Main Js Plugin -->
+        <script type='text/javascript' src='js/main.min.js'></script>
+        <!-- jQuery UI, For gridstack -->
+        <script type='text/javascript' src='js/jquery-ui.min.js'></script>
+        <!-- Gridstack(Custom Portfolio Grid) -->
+        <script type='text/javascript' src='js/gridstack.min.js'></script>
+        <!-- jplayer Plugin -->
+        <script type='text/javascript' src='js/jquery.jplayer.min.js'></script>
+        <!-- Arnold. Theme main js -->
+        <script type='text/javascript' src='js/custom.theme.js'></script>
+
+    </body>
 </html>
